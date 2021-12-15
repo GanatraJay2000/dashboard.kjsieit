@@ -1,0 +1,55 @@
+$danger:#ff5f45;
+$danger:#911717;
+$primary: #0798ec;
+$secondary:#fc6c7c;
+$warning:#fec401;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+
+body > *:not(i) {
+    font-family: "Poppins", sans-serif !important;  
+  }
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.fw-bold{
+      font-weight: 600 !important;
+}
+.fw-bold-sm{
+      font-weight: 500 !important;
+}
+.fw-bold-lg{
+      font-weight: 700 !important;
+}
+
+.pg-wrapper{
+    width:100vw !important;
+    max-width: 100% !important;    
+    padding:0 !important;
+}
+
+.pg-container{
+    width: 100% !important;
+}
+
+.pg-page{
+    width: calc(100%) !important;
+    height:100vh !important;
+    border-right:50px solid #911717;
+    &>div{
+        width: 100%;
+        height: 100%;        
+    }     
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

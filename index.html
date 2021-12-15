@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | KJSIEIT</title>
+    <title>Dashboard | KJSIEIT</title>  
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/pageable/dist/pageable.min.css">      
 </head>
 <body>
-    <h1>Dashboard</h1>
+    <div id="container">
+        <div class="shadow" data-anchor="Page 1">
+            <div class="">
+                <div class="w-100 pt-5 ps-5">
+                    <div class="d-flex flex-md-row flex-column align-items-center">
+                        <div class="col-md-2 p-0 text-center col-6 mb-5 mb-md-0">
+                            <img src="img/logo.png" class="mb-4"
+                                style="width: 140px; height:auto; margin-left:0;">
+                        </div>
+                        <div class="p-0 text-center text-md-start">
+                            <h2 class="text-danger mb-0 font-weight-bold text-uppercase">SOMAIYA</h2>
+                            <h2 class="text-danger  text-uppercase">VIDYAVIHAR</h2>
+                            <div style="height:1.75px" class="bg-dark my-2 col-md-3 col-12 p-0"></div>
+                            <h3 class=" font-weight-bold">K.&nbsp;J.&nbsp;Somaiya Institute of Engineering and
+                                Information Technology</h3>
+                            <div style="font-weight:500">An Autonomous Institute Permanently Affiliated to the University of Mumbai
+                            </div>
+                            <div style="font-weight:500">Accredited by NAAC with 'A' Grade (3.21 CGPA), Approved by AICTE, New Delhi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="display-2 fw-bold text-center mt-5 pt-5 text-dark">DASHBOARD</h1>                
+            </div>
+        </div>
+        <div class="shadow"  data-anchor="Page 2">
+            <div class="center flex-column">
+                <h1 class="display-2 fw-bold text-center">Event Management System (EMS)</h1>
+                <a href="https://ems.kjsieit.in" class="fs-3" target="blank">
+                <i class="fas fa-external-link-alt me-2    "></i>    Visit
+                </a>
+            </div>
+        </div>            
+        <div class="shadow"  data-anchor="Page 3">
+            <div class="center flex-column">
+                <h1 class="display-2 fw-bold text-center">Student Information Management System (SIMS)</h1>
+                <a href="https://www.kjsieit.in/sims/php/home.php" class="fs-3" target="blank">
+                <i class="fas fa-external-link-alt me-2    "></i>    Visit
+                </a>
+            </div>
+        </div>            
+    </div>
+    <script src="node_modules/pageable/dist/pageable.min.js"></script>
+    <script>
+        new Pageable("#container");
+    </script>
 </body>
 </html>
