@@ -18,7 +18,21 @@ body > *:not(i) {
 ::-webkit-scrollbar {
     width: 0px;
   }
-
+  .rounded-xsm {
+    border-radius: 0.25rem !important;
+  }
+  .rounded-sm {
+    border-radius: 0.75rem !important;
+  }
+  .rounded {
+    border-radius: 1rem !important;
+  }
+  .rounded-lg {
+    border-radius: 1.5rem !important;
+  }
+  .rounded-xlg {
+    border-radius: 1.75rem !important;
+  }
 .fw-bold{
       font-weight: 600 !important;
 }
@@ -41,15 +55,37 @@ body > *:not(i) {
 
 .pg-page{
     width: calc(100%) !important;
-    height:100vh !important;
+    min-height:100vh !important;
     border-right:50px solid #911717;
     &>div{
         width: 100%;
-        height: 100%;        
+        min-height: 100%;        
     }     
     .center{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+}
+
+.project-img{
+    position: relative;
+
+    img{        
+        box-shadow: 0px 0px 0px 15px #fff, 0px 0px 0px 17px $danger;        
+    }
+
+    // &::after{
+    //     content:"";
+    //     display: block;
+    //     position: absolute;
+    //     top:0;
+    //     right:0;
+    //     z-index: -1;
+    //     border-radius: 0.75rem;
+    //     transform: translate(10px,10px);
+    //     background-color: #33333311;
+    //     height:100%;
+    //     width:100%;        
+    // }
 }
